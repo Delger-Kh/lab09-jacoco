@@ -1,0 +1,68 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< mn.edu.must.sqat:lab09-jacoco >--------------------
+[INFO] Building lab09-jacoco 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.13:prepare-agent (default) @ lab09-jacoco ---
+[INFO] argLine set to -javaagent:C:\\Users\\hp\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.13\\org.jacoco.agent-0.8.13-runtime.jar=destfile=D:\\Codings\\2026\\F.CSA313\\lab09-jacoco\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ lab09-jacoco ---
+[INFO] skip non existing resourceDirectory D:\Codings\2026\F.CSA313\lab09-jacoco\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ lab09-jacoco ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ lab09-jacoco ---
+[INFO] skip non existing resourceDirectory D:\Codings\2026\F.CSA313\lab09-jacoco\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ lab09-jacoco ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ lab09-jacoco ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running mn.edu.must.sqat.ScholarshipCalculatorTest
+[ERROR] Tests run: 29, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.287 s <<< FAILURE! -- in mn.edu.must.sqat.ScholarshipCalculatorTest
+[ERROR] mn.edu.must.sqat.ScholarshipCalculatorTest.letterGrade_boundary_60_isD -- Time elapsed: 0.122 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <D> but was: <F>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at mn.edu.must.sqat.ScholarshipCalculatorTest.letterGrade_boundary_60_isD(ScholarshipCalculatorTest.java:151)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ScholarshipCalculatorTest.letterGrade_boundary_60_isD:151 expected: <D> but was: <F>
+[INFO] 
+[ERROR] Tests run: 29, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.947 s
+[INFO] Finished at: 2026-11-04T18:11:01+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project lab09-jacoco: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\Codings\2026\F.CSA313\lab09-jacoco\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
